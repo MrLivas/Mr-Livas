@@ -1,0 +1,622 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #111;
+}
+
+header, section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2 {
+  color: #0a4d4d; /* Vert pétrole */
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card img, .card video {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.menu {
+  background-color: #1818187a; /* blanc pur */
+  color: blanchedalmond; /* vert pétrole */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; /* police moderne */
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background-image: url('./image\ trois.jpg'); /* Remplace par le vrai nom du fichier */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #00a08c; /* Vert pétrole */
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.livas-name {
+  font-family: 'Rock Salt', cursive; /* Style peinture */
+  font-size: 80px;
+  text-align: center;
+  margin: 40px 0;
+  background: linear-gradient(90deg, #0a4d4d, #000);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 4s ease-in-out infinite;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes shine {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+.ep-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.ep-details {
+  flex: 1;
+  min-width: 300px;
+  color: #0a4d4d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ep-details h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #003333;
+}
+
+.ep-details p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ep-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.ep-image img {
+  max-width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.main-background {
+  background-image: url('./5392718.jpg'); /* remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+.main-background {
+  position: relative;
+}
+
+.main-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* voile blanc transparent */
+  z-index: 0;
+}
+
+.main-background > * {
+  position: relative;
+  z-index: 1;
+}
+.spotify-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #0a4d4d; /* vert pétrole */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #066666;
+}
+.playlist-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.track-card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.track-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.track-card h4 {
+  margin: 10px 0;
+  color: #0a4d4d;
+}
+
+.track-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.spotify-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #066666;
+}
+.clips-section {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid #06666680;
+}
+
+.clips-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #06666694;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.youtube-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #066666;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.youtube-link:hover {
+  background-color: #066666;
+}
+.footer-contact {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid #066666;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.contact-links li {
+  margin: 10px 0;
+}
+
+.contact-links a {
+  color:#066666;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #fff;
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 20px;
+}
+.boutique-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.boutique-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #066666;
+}
+
+.product-info p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.local-note {
+  font-weight: bold;
+  color: #066666;
+}
+
+.order-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #066666;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #066666;
+}
+.boutique-gallery {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.boutique-gallery h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #066666;
+  text-transform: uppercase;
+}
+
+.local-note {
+  font-weight: bold;
+  color: #066666;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px #06666654;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-item h3 {
+  font-size: 1.1em;
+  color: #066666;
+  margin: 0;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.whatsapp-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-whatsapp {
+  background-color: #00665e; /* Vert pétrole */
+  color: #fff;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #004c45;
+}
+
+.btn-whatsapp.secondary {
+  background-color: #004c45;
+}
+
+.btn-whatsapp.secondary:hover {
+  background-color: #00665e;
+}
+.concerts-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.concerts-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #00665e;
+  text-transform: uppercase;
+}
+
+.concert-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 15px;
+}
+
+.concert-row {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  align-items: center;
+}
+
+.event-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #00665e; /* Vert pétrole */
+  text-align: left;
+}
+
+.event-date {
+  font-size: 0.95em;
+  color: #333;
+  text-align: right;
+}
+.actus-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.actus-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #00665e;
+  text-transform: uppercase;
+}
+
+.actus-block h3 {
+  font-size: 1.5em;
+  color: #00665e; /* Vert pétrole */
+  margin-bottom: 15px;
+}
+
+.actus-block p {
+  font-size: 1em;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.actus-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.actus-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.actus-gallery img:hover {
+  transform: scale(1.05);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+/* Pour les écrans de tablette et plus grands */
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  }
+
+  .concert-row {
+    grid-template-columns: 1fr 120px; /* structure fixe pour ton registre */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .actus-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Pour les très grands écrans */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
